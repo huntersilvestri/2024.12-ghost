@@ -1,0 +1,76 @@
+.u-permalink {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+    outline: none;
+}
+
+.u-placeholder {
+    position: relative;
+    z-index: 10;
+    background-color: var(--input-background-color);
+    overflow: hidden;
+}
+
+.u-placeholder::before {
+    display: block;
+    content: "";
+}
+
+.u-placeholder.horizontal::before {
+    padding-bottom: 50%;
+}
+
+.u-placeholder.rectangle::before {
+    padding-bottom: 62%;
+}
+
+.u-placeholder.square::before {
+    padding-bottom: 100%;
+}
+.u-placeholder.portrait::before {
+    padding-bottom: 150%;
+}
+
+.u-object-fit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.u-gap-big {
+    row-gap: 6.4rem;
+}
+
+.round {
+    border-radius: var(--radii-medium);
+    overflow: hidden;
+}
+
+/* wave separator */
+.wave-separator {
+    position: relative;
+    width: 100%;
+}
+
+.hidden {
+    display: hidden;
+}
+
+.post-expanded .wave-separator {
+    margin-top: 6rem;
+}
+
+.post-expanded:last-child {
+    margin-bottom: 0;
+}
+
+.post-expanded:last-child .wave-separator {
+    display: none;
+}
